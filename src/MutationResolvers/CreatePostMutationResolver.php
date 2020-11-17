@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace PoPSitesWassup\PostMutations\MutationResolvers;
 
-use PoPSchema\PostMutations\MutationResolvers\CreatePostMutationResolverTrait;
+use PoPSchema\CustomPostMutations\MutationResolvers\CreateCustomPostMutationResolverTrait;
 
 class CreatePostMutationResolver extends AbstractCreateUpdatePostMutationResolver
 {
-    use CreatePostMutationResolverTrait;
+    use CreateCustomPostMutationResolverTrait;
 }
