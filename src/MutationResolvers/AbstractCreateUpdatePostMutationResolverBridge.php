@@ -13,4 +13,3 @@ abstract class AbstractCreateUpdatePostMutationResolverBridge extends AbstractCr
         return !empty(\PoP_Application_Utils::getContentpostsectionCats());
     }
 }
-
