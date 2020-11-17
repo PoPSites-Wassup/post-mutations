@@ -9,10 +9,11 @@ use PoPSitesWassup\CustomPostMutations\MutationResolvers\AbstractCreateUpdateCus
 
 abstract class AbstractCreateUpdatePostMutationResolver extends AbstractCreateUpdateCustomPostMutationResolver
 {
-    protected function getCategoryTaxonomy(): ?string
-    {
-        return 'category';
-    }
+    // @TODO: Migrate when package "Categories" is completed
+    // protected function getCategoryTaxonomy(): ?string
+    // {
+    //     return 'category';
+    // }
 
     public function getCustomPostType(): string
     {
