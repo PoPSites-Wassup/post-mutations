@@ -6,8 +6,6 @@ namespace PoPSitesWassup\PostMutations\MutationResolvers;
 
 class UpdatePostMutationResolverBridge extends AbstractCreateUpdatePostMutationResolverBridge
 {
-    use CreateUpdatePostMutationResolverBridgeTrait;
-
     public function getMutationResolverClass(): string
     {
         return UpdatePostMutationResolver::class;

@@ -8,6 +8,9 @@ use PoPSitesWassup\CustomPostMutations\MutationResolvers\AbstractCreateUpdateCus
 
 abstract class AbstractCreateUpdatePostMutationResolverBridge extends AbstractCreateUpdateCustomPostMutationResolverBridge
 {
-
+    protected function showCategories()
+    {
+        return !empty(\PoP_Application_Utils::getContentpostsectionCats());
+    }
 }
 
