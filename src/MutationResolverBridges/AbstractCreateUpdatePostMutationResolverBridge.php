@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace PoPSitesWassup\PostMutations\MutationResolvers;
+namespace PoPSitesWassup\PostMutations\MutationResolverBridges;
 
-use PoPSitesWassup\CustomPostMutations\MutationResolvers\AbstractCreateUpdateCustomPostMutationResolverBridge;
+use PoPSitesWassup\CustomPostMutations\MutationResolverBridges\AbstractCreateUpdateCustomPostMutationResolverBridge;
 
 abstract class AbstractCreateUpdatePostMutationResolverBridge extends AbstractCreateUpdateCustomPostMutationResolverBridge
 {
