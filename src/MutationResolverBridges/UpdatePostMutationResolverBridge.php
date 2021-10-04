@@ -4,16 +4,16 @@ declare(strict_types=1);
 
 namespace PoPSitesWassup\PostMutations\MutationResolverBridges;
 
-use Symfony\Contracts\Service\Attribute\Required;
 use PoP\ComponentModel\MutationResolvers\MutationResolverInterface;
 use PoPSitesWassup\PostMutations\MutationResolvers\UpdatePostMutationResolver;
+use Symfony\Contracts\Service\Attribute\Required;
 
 class UpdatePostMutationResolverBridge extends AbstractCreateUpdatePostMutationResolverBridge
 {
     protected UpdatePostMutationResolver $updatePostMutationResolver;
 
     #[Required]
-    public function autowireUpdatePostMutationResolverBridge(
+    final public function autowireUpdatePostMutationResolverBridge(
         UpdatePostMutationResolver $updatePostMutationResolver,
     ): void {
         $this->updatePostMutationResolver = $updatePostMutationResolver;
